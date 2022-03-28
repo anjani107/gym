@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controller\DemoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,11 +30,7 @@ Route::get('/class', function () {
     return view('class');
 });
 
-// Route::get('/blog', function () {
-//     return view('blog');
-// });
-
-// Route::get('/blog','App/HTTP/Controllers/blogController@blogList'); 
+Route::get('/blog','App/HTTP/Controllers/blogController@blogList'); 
 
 Route::get('/blog', 'App\Http\Controllers\blogController@blogList')->name('blogList');
 
@@ -45,3 +42,6 @@ Route::get('/contact', function () {
 });
 
 Route::get('singleBlog/{id}', 'App\Http\Controllers\blogController@blogsingle')->name('singleBlog');
+
+
+Route::get('/demo',[DemoController::class , 'hello']);

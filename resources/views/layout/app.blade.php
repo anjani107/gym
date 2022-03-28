@@ -122,7 +122,8 @@
     <script src="{{ asset('lib/waypoints/waypoints.min.js')}}"></script>
 
     <!-- Contact Javascript File -->
-    <script src="{{ asset('mail/jqBootstrapValidation.min.js')}}"></script>
+    <script src="{{ asset('mail/jqBootstrapValidation.min.js')}}repeat it 
+    "></script>
     <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
