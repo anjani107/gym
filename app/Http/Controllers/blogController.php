@@ -10,8 +10,7 @@ class blogController extends Controller
     public function blogList(){
 
         $blogList = DB::table('bloglist')->get();
-        // echo "<>"
-        // print_r($blogList);
+      
         
         return view('blog',['blogList'=>$blogList]);
     }

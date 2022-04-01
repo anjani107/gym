@@ -46,16 +46,7 @@
     </div>
     <!-- Navbar End -->
 
-
-
-
 @yield('content')
-
-
-
-
-
-
 
     
     <!-- Footer Start -->
@@ -129,5 +120,6 @@
     <!-- Template Javascript -->
     <script src="{{ asset('js/main.js')}}"></script>
 </body>
+
 
 </html>
